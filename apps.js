@@ -1,3 +1,4 @@
+// Header daily discount js Start
 const today = new Date();
 console.log (today);
 const dayNumber = today.getDay();
@@ -29,14 +30,19 @@ function special () {
     else (element.classList.add("hideme"))
 
 }
+//Header daily discount js END
 
 console.log("Your got a " + special());
 element.innerHTML = "Check out the Special today" + "</br>" + special();
+//Header daily discount js END
 
-//doggie years calculator
-// Your doggie is NN years old in dog years!
+//doggie years calculator START
+
 var calcDogYear = function () {
+    // @ts-ignore
     var humanYear = document.getElementById("dog").value;
     var realDogAge = humanYear * 7;
-    document.getElementById("dogAge").innerHTML = ("Your doggi is " + realDogAge + " years old in dog years!");
+    document.getElementById("dogAge").innerHTML = ("Your doggie is " + realDogAge + " years old in dog years!");
 }
+
+//doggie years calculator END
