@@ -1,4 +1,21 @@
-// Header daily discount js Start
+
+//Homepage age checker START
+var customerName = window.prompt ("Please enter your name:");
+var ageCheck = window.prompt ("Please enter your age:");
+// @ts-ignore
+if (ageCheck < 21) {
+    window.alert ("You submitted that you are " + ageCheck + " years old, " + customerName + ".");
+    window.alert ("You must be at least 21 of age to visit this site.");
+    location.href = "http://www.google.com";
+}
+// @ts-ignore
+else if (ageCheck > 21) {
+    window.alert ("You are " + ageCheck + " years old!");
+    window.alert ("Welcome " + customerName + "!");
+}
+//Homepage age checker END
+
+// Header daily discount js START
 const today = new Date();
 console.log (today);
 const dayNumber = today.getDay();
@@ -30,19 +47,16 @@ function special () {
     else (element.classList.add("hideme"))
 
 }
-//Header daily discount js END
 
 console.log("Your got a " + special());
 element.innerHTML = "Check out the Special today" + "</br>" + special();
 //Header daily discount js END
 
 //doggie years calculator START
-
 var calcDogYear = function () {
     // @ts-ignore
     var humanYear = document.getElementById("dog").value;
     var realDogAge = humanYear * 7;
     document.getElementById("dogAge").innerHTML = ("Your doggie is " + realDogAge + " years old in dog years!");
 }
-
 //doggie years calculator END
