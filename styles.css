@@ -12,3 +12,23 @@ div.showme {
 div.hideme {
     display: none;
 }
+
+.center-doggieCalc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculate {
+    margin: 1em;
+}
+
+#dog {
+    width: 15em;
+}
+
+.result , #dogAge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
