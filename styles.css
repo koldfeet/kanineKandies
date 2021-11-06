@@ -1,9 +1,14 @@
+
+/* daily ads banner START*/
 #message1 {
     background-color: yellowgreen;
     height: 50px;
     padding: 15px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+/* daily ads banner END*/
 
 div.showme {
     display: block;
@@ -13,6 +18,7 @@ div.hideme {
     display: none;
 }
 
+/* doggie age calc and display result START*/
 .center-doggieCalc {
     display: flex;
     justify-content: center;
@@ -32,3 +38,12 @@ div.hideme {
     justify-content: center;
     align-items: center;
 }
+/* doggie age calc and display result END*/
+
+/* Body cards START*/
+.centerImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Body cards END*/
