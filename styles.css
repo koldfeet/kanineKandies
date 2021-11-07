@@ -1,7 +1,7 @@
 
 /* daily ads banner START*/
 #message1 {
-    background-color: yellowgreen;
+    background-color: rgb(235, 229, 229);
     height: 90px;
     padding: 15px;
     display: flex;
@@ -45,5 +45,14 @@ div.hideme {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+img {
+    width: 80%;
+}
+
+.tableContainer {
+    width: 80%;
+    background-color: rgb(235, 229, 229);
 }
 /* Body cards END*/
