@@ -10,12 +10,12 @@
     </head>
 
     <script>
-        //Homepage age checker START
+        //age checker START
         var customerName = window.prompt("Please enter your name:");
         var ageCheck = window.prompt("Please enter your age:");
         if (ageCheck < 18) {
             window.alert("You submitted that you are " + ageCheck + " years old, " + customerName + ".");
-            window.alert("You must be at least 21 of age to visit this site.");
+            window.alert("You must be at least 18 of age to visit this site.");
             location.href = "denied.html";
         }
         else if (ageCheck >= 18) {
@@ -23,11 +23,14 @@
             window.alert("Welcome " + customerName + "!");
             location.href = "home.html";
         }
-        //Homepage age checker END
+        //age checker END
     </script>
 
     <body>
-
+        <!--
+            This page was created to be a blank page. This is meant to block the main 
+            content from being view before javaScript aga gate can verify that the user is over 18 years old. 
+        -->
     </body>
 
 </html>

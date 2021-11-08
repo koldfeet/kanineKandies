@@ -33,7 +33,7 @@ function special () {
 }
 
 console.log("Your got a " + special());
-element.innerHTML = "Check out the Special today" + "</br>" + special();
+element.innerHTML = "Check out the Special for today :" + "</br>" + special();
 //Header daily discount js END
 
 //doggie years calculator START
@@ -44,3 +44,4 @@ var calcDogYear = function () {
     document.getElementById("dogAge").innerHTML = ("Your doggie is " + realDogAge + " years old in dog years!");
 }
 //doggie years calculator END
+
