@@ -69,6 +69,10 @@ img {
     width: 80%;
 }
 
+.imgTwo {
+    width: 40%;
+}
+
 .page-table {
     display: flex;
     justify-content: center;
