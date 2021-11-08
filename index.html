@@ -16,12 +16,12 @@
         if (ageCheck < 21) {
             window.alert("You submitted that you are " + ageCheck + " years old, " + customerName + ".");
             window.alert("You must be at least 21 of age to visit this site.");
-            location.href = "blank.html";
         }
         // @ts-ignore
         else if (ageCheck >= 21) {
             window.alert("You are " + ageCheck + " years old!");
             window.alert("Welcome " + customerName + "!");
+            location.href = "home.html";
         }
 //Homepage age checker END
     </script>
