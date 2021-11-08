@@ -7,6 +7,10 @@
 .compTitle {
     font-size: 5em;
 }
+
+.headLine {
+    width: 60%;
+}
 /* title css END*/
 
 /* daily ads banner START*/
@@ -30,6 +34,7 @@ div.hideme {
 /* doggie age calc and display result START*/
 .dogCalc {
     margin: 1.3em;
+    padding: 1em;
 }
 
 .center-doggieCalc {
@@ -69,7 +74,7 @@ img {
     justify-content: center;
     align-items: center;
     background-color: rgb(235, 229, 229);
-    width: 70%;
+    width: 80%;
 }
 
 .center-main {
@@ -77,7 +82,31 @@ img {
     justify-content: center;
     align-items: center;
 }
+
+.homeTable {
+    margin: 1em;
+}
 /* Body cards END*/
+
+/*Home footer START*/
+.myFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 229, 229);
+    margin-top: 1em;
+}
+
+.footerBlock {
+    margin: 1.5em;
+}
+
+.noDot {
+    list-style-type: none;
+}
+
+
+/*Home footer START*/
 
 /* Denied page CSS START*/
 .center-img {

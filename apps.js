@@ -8,25 +8,25 @@ const element = document.getElementById("message1");
 
 function special () {
     if (dayNumber === 1) {
-        return "1/2 off all oils";
+        return "1/2 off all oils!";
     }
     else if (dayNumber === 2) {
-        return "2-for-1 treats";
+        return "2-for-1 treats!";
     }
     else if (dayNumber === 3) {
-        return "Buy-one-Get-one Free day";
+        return "Buy-one-Get-one Free day!";
     }
     else if (dayNumber === 4) {
-        return "Add a gummy";
+        return "Add a gummy!";
     }
     else if (dayNumber === 5) {
-        return "Bring a friend get a extra treat";
+        return "Bring a friend get a extra treat!";
     }
     else if (dayNumber === 6) {
-        return "Buy two edibles get one free";
+        return "Buy two edibles get one free!";
     }
     else if (dayNumber === 7) {
-        return "Brunch and free samples";
+        return "Brunch and free samples!";
     }
     else (element.classList.add("hideme"))
 
