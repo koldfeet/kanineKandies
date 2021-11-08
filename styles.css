@@ -56,3 +56,30 @@ img {
     background-color: rgb(235, 229, 229);
 }
 /* Body cards END*/
+
+/* Denied page CSS START*/
+.center-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.denied-img {
+    width: 20%;
+    height: 20%;
+}
+
+p {
+    width: 30%;
+}
+
+.center-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+/* Denied page CSS END*/

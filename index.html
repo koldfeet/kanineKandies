@@ -5,7 +5,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <link rel="stylesheet" href="styles.css">
+        <title>Welcome</title>
     </head>
 
     <script>
@@ -16,6 +17,7 @@
         if (ageCheck < 21) {
             window.alert("You submitted that you are " + ageCheck + " years old, " + customerName + ".");
             window.alert("You must be at least 21 of age to visit this site.");
+            location.href = "denied.html";
         }
         // @ts-ignore
         else if (ageCheck >= 21) {
@@ -27,7 +29,7 @@
     </script>
 
     <body>
-        <h1>Welcome to Kanine Kandies</h1>
+
     </body>
 
 </html>
