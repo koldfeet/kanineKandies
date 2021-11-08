@@ -1,19 +1,19 @@
 
-//Homepage age checker START
-var customerName = window.prompt ("Please enter your name:");
-var ageCheck = window.prompt ("Please enter your age:");
-// @ts-ignore
-if (ageCheck < 21) {
-    window.alert ("You submitted that you are " + ageCheck + " years old, " + customerName + ".");
-    window.alert ("You must be at least 21 of age to visit this site.");
-    location.href = "http://www.google.com";
-}
-// @ts-ignore
-else if (ageCheck >= 21) {
-    window.alert ("You are " + ageCheck + " years old!");
-    window.alert ("Welcome " + customerName + "!");
-}
-//Homepage age checker END
+// //Homepage age checker START
+// var customerName = window.prompt ("Please enter your name:");
+// var ageCheck = window.prompt ("Please enter your age:");
+// // @ts-ignore
+// if (ageCheck < 21) {
+//     window.alert ("You submitted that you are " + ageCheck + " years old, " + customerName + ".");
+//     window.alert ("You must be at least 21 of age to visit this site.");
+//     location.href ="blank.html";
+// }
+// // @ts-ignore
+// else if (ageCheck >= 21) {
+//     window.alert ("You are " + ageCheck + " years old!");
+//     window.alert ("Welcome " + customerName + "!");
+// }
+// //Homepage age checker END
 
 // Header daily discount js START
 const today = new Date();
