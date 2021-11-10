@@ -55,7 +55,7 @@ counter = 0;
 
 function setImage () {
     document.getElementById("carousel-image").src = arrayCarousel [counter];
-    document.getElementById("carousel-image1").src = arrayCarousel [counter];
+    // document.getElementById("carousel-image1").src = arrayCarousel [counter];
 
     counter = (counter + 1) % arrayCarousel.length;
 }
