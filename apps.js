@@ -45,3 +45,20 @@ var calcDogYear = function () {
 }
 //doggie years calculator END
 
+//Carousel Start
+const arrayCarousel = [
+    "images/image.png",
+    "images/image2.png",
+];
+
+counter = 0;
+
+function setImage () {
+    document.getElementById("carousel-image").src = arrayCarousel [counter];
+    document.getElementById("carousel-image1").src = arrayCarousel [counter];
+
+    counter = (counter + 1) % arrayCarousel.length;
+}
+
+setInterval (setImage , 2000);
+ //Carousel END

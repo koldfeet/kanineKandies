@@ -56,6 +56,19 @@ div.hideme {
     justify-content: center;
     align-items: center;
 }
+
+#carousel-image , #carousel-image1 {
+    width: 400px;
+    margin: 15px;
+}
+
+.carousel-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    padding: 1.5em;
+}
 /* doggie age calc and display result END*/
 
 /* Body cards START*/
