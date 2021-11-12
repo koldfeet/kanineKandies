@@ -11,16 +11,16 @@
 
     <script>
         //age checker START
-        var customerName = window.prompt("Please enter your name:");
+        // var customerName = window.prompt("Please enter your name:");
         var ageCheck = window.prompt("Please enter your age:");
         if (ageCheck < 18) {
-            window.alert("You submitted that you are " + ageCheck + " years old, " + customerName + ".");
+            window.alert("You submitted that you are " + ageCheck + " years old. ");
             window.alert("You must be at least 18 of age to visit this site.");
             location.href = "denied.html";
         }
         else if (ageCheck >= 18) {
-            window.alert("You are " + ageCheck + " years old!");
-            window.alert("Welcome " + customerName + "!");
+            // window.alert("You are " + ageCheck + " years old!");
+            // window.alert("Welcome " + customerName + "!");
             location.href = "home.html";
         }
         //age checker END
