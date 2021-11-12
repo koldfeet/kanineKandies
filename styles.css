@@ -71,6 +71,26 @@ div.hideme {
 }
 /* doggie age calc and display result END*/
 
+/* Nav menu START */
+.my-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu {
+    margin: 1em;
+    padding: .7em;
+    background-color: rgb(66, 187, 228);
+    color: blue;
+}
+
+.nav-menu:hover {
+    text-decoration: none;
+    color: white;
+}
+/* Nav menu END */
+
 /* Body cards START*/
 .centerImage {
     display: flex;
