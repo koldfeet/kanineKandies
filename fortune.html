@@ -42,6 +42,28 @@
                 text-align: center;
             }
 
+            /* Nav menu START */
+            .my-nav {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .nav-menu {
+                margin: 1em;
+                padding: .7em;
+                text-decoration: none;
+                background-color: rgb(66, 187, 228);
+                color: blue;
+            }
+
+            .nav-menu:hover {
+                text-decoration: none;
+                color: white;
+            }
+
+            /* Nav menu END */
+
         </style>
     </head>
 
@@ -52,6 +74,11 @@
         <h2>It may not be all roses and sunshine <i>Look at your OWN RISK...</i> </h2>
         <button onclick="tellFortune()">&#127801 See your Fortune</button>
         <!-- <button onclick="tellFortune">See your Fortune</button> -->
+        <!-- navigation menu START -->
+        <nav class="my-nav">
+            <a class="nav-menu" href="home.html">Home</a>
+        </nav>
+        <!-- navigation menu END -->
         <h2 id="btn"></h2>
         <script src="fortune.js"></script>
     </body>
