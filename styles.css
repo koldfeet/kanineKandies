@@ -59,16 +59,27 @@ div.hideme {
 }
 
 #carousel-image , #carousel-image1 {
-    width: 400px;
+    width: 300px;
     margin: 15px;
 }
 
-.carousel-center {
+.carousel-center , .centerDosage {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 1em;
     padding: 1.5em;
+}
+
+.dosageStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30em;
+}
+
+.dosagePic {
+    width: 21px;
 }
 /* doggie age calc and display result END*/
 
