@@ -1,163 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <!--Bootstrap CDN-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <!--Bootstrap CDN-->
-    <title>Home</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <!--Bootstrap CDN-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <!--Bootstrap CDN-->
+        <title>Home</title>
+    </head>
 
-<body>
-    <header class="header-title">
-        <h1 class="compTitle">Kanie Kandies</h1>
-        <h2 id="message1"></h2>
-        <hr class="headLine">
-        <div class="center-doggieCalc">
-            <input type="number" id="dog" placeholder="Enter dog age in Human Years" required />
-            <button onClick="calcDogYear()" class="calculate">Calculate</button>
-        </div>
-        <div class="dogCalc">
-            <h2 class="result">Calculate your dog age!</h2>
-            <h2 id="dogAge">0</h2>
-        </div>
-        <hr class="headLine">
-
-        <!--Carousel and Dosage StART-->
-        <div class="centerDosage">
-            <h2>Doggie CBD dosage!</h2>
-        </div>
-
-        <div class="col-style">
-            <div class="container">
-                <div class="row align-items-start">
-                    <div class="col card-one">
-                        <div class="carousel-center">
-                            <img id="carousel-image">
-                            <!-- <img id="carousel-image1"> -->
-                        </div>
-                    </div>
-                    <img class="dosagePic" src="images/dosagePic.PNG">
-                    <div class="col card-two">
-                        <h2 class="dosage-header">Small Dog 5 - 35lb</h2>
-                        <button class="btn_css" onclick="smalDog()">Learn More</button>
-                        <p id="myDosage"></p>
-                        <h2 class="dosage-header">Medium Dog 35 - 75lb</h2>
-                        <button class="btn_css" onclick="medDog()">Learn More</button>
-                        <p id="myDosageTwo"></p>
-                        <h2 class="dosage-header">Large Dog 75lb +</h2>
-                        <button class="btn_css" onclick="largDog()">Learn More</button>
-                        <p id="myDosageThree"></p>
-                    </div>
-
-                    <!--Carousel and Dosage END-->
-                </div>
+    <body>
+        <header class="header-title">
+            <h1 class="compTitle">Kanie Kandies</h1>
+            <h2 id="message1"></h2>
+            <hr class="headLine">
+            <div class="center-doggieCalc">
+                <input type="number" id="dog" placeholder="Enter dog age in Human Years" required />
+                <button onClick="calcDogYear()" class="calculate">Calculate</button>
             </div>
+            <div class="dogCalc">
+                <h2 class="result">Calculate your dog age!</h2>
+                <h2 id="dogAge">0</h2>
+            </div>
+            <hr class="headLine">
             <!-- navigation menu START -->
-            <!-- <nav class="my-nav">
-                    <a class="nav-menu" href="home.html">Home</a>
-                    <a class="nav-menu" href="fortune.html">Fortune Teller</a>
-                </nav> -->
+            <nav class="my-nav">
+                <a class="nav-menu" href="home.html">Home</a>
+                <a class="nav-menu" href="fortune.html">Fortune Teller</a>
+            </nav>
             <!-- navigation menu END -->
-
-    </header>
-    <!--body content START-->
-    <article>
-        <main class="center-main">
-            <div class="page-table">
-                <table class="homeTable">
-                    <tbody>
-                        <tr>
-                            <th>
-                                <div class="centerImage">
-                                    <img src="images/cbd_1.png" alt="cbd oil">
-                                </div>
-                            </th>
-                            <td>
-                                <h3>CBD OIL FOR DOGS & CATS</h3>
-                                <ul>
-                                    <li>Broad Spectrum CBD + other Cannabinoids</li>
-                                    <li>Concentrated in a convenient dropper bottle</li>
-                                    <li>Easily drop directly into mouth or in water/food</li>
-                                    <li>Formulated specifically for Pets</li>
-                                    <li>0% THC = Non Psychoactive = NO “High”</li>
-                                    <li>100% Natural Ingredients</li>
-                                    <li>Organic Superfoods +CBD</li>
-                                    <li>Non GMO, No Gluten, No Dairy</li>
-                                    <li>No Additives or Preservatives</li>
-                                    <li>Manufactured in the USA</li>
-                                </ul>
-                                <hr>
-                                <ul>
-                                    <li>300mg CBD for medium pets 20-60lbs</li>
-                                    <li>10mg CBD per serving</li>
-                                    <li>Approx. 30 servings per bottle</li>
-                                    <li>Bottle size: 15ml / 0.5 ounce</li>
-                                </ul>
-
-                                <h4>$39.95</h4>
-                                <hr>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                <div class="centerImage">
-                                    <img class="imgTwo" src="images/cbd_3.PNG" alt="cbd oil">
-                                </div>
-                            </th>
-                            <td>
-                                <h3>CBD DOG TREATS + JOINT & MOBILITY CARE</h3>
-                                <ul>
-                                    <li>Joint & Mobility Care</li>
-                                    <li>100% Natural Ingredients</li>
-                                    <li>Yummy Pumpkin Spice & Cinnamon Flavor</li>
-                                    <li>Organic, Vegan, Superfoods</li>
-                                    <li>Non GMO, No Gluten, No Dairy</li>
-                                    <li>30 Treats per Bag</li>
-                                </ul>
-                                <hr>
-                                <ul>
-                                    <li>300mg CBD for medium pets 20-60lbs</li>
-                                    <li>10mg CBD per serving</li>
-                                </ul>
-
-                                <h4>$34.95</h4>
-                                <hr>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <!--Carousel and Dosage StART-->
+            <div class="centerDosage">
+                <h2>Doggie CBD dosage!</h2>
             </div>
-        </main>
-    </article>
-    <!--body content END-->
 
-    <footer class="myFooter">
-        <!--Footer Start-->
-        <div class="footerBlock">
-            <ul>
-                <li class="noDot">Phone: 303-999-9999</li>
-                <li class="noDot">Address: 2001 Colorado Blvd, Denver, CO 80205</li>
-            </ul>
-        </div>
-        <!--Footer Start-->
-    </footer>
+            <div class="col-style">
+                <div class="container">
+                    <div class="row align-items-start">
+                        <div class="col card-one">
+                            <div class="carousel-center">
+                                <img id="carousel-image">
+                                <!-- <img id="carousel-image1"> -->
+                            </div>
+                        </div>
+                        <img class="dosagePic" src="images/dosagePic.PNG">
+                        <div class="col card-two">
+                            <h2 class="dosage-header">Small Dog 5 - 35lb</h2>
+                            <button class="btn_css" onclick="smalDog()">Learn More</button>
+                            <p id="myDosage"></p>
+                            <h2 class="dosage-header">Medium Dog 35 - 75lb</h2>
+                            <button class="btn_css" onclick="medDog()">Learn More</button>
+                            <p id="myDosageTwo"></p>
+                            <h2 class="dosage-header">Large Dog 75lb +</h2>
+                            <button class="btn_css" onclick="largDog()">Learn More</button>
+                            <p id="myDosageThree"></p>
+                        </div>
 
-    <script src="apps.js"></script>
-</body>
+                        <!--Carousel and Dosage END-->
+                    </div>
+                </div>
+
+
+        </header>
+        <!--body content START-->
+        <article>
+            <main class="center-main">
+                <div class="page-table">
+                    <table class="homeTable">
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <div class="centerImage">
+                                        <img src="images/cbd_1.png" alt="cbd oil">
+                                    </div>
+                                </th>
+                                <td>
+                                    <h3>CBD OIL FOR DOGS & CATS</h3>
+                                    <ul>
+                                        <li>Broad Spectrum CBD + other Cannabinoids</li>
+                                        <li>Concentrated in a convenient dropper bottle</li>
+                                        <li>Easily drop directly into mouth or in water/food</li>
+                                        <li>Formulated specifically for Pets</li>
+                                        <li>0% THC = Non Psychoactive = NO “High”</li>
+                                        <li>100% Natural Ingredients</li>
+                                        <li>Organic Superfoods +CBD</li>
+                                        <li>Non GMO, No Gluten, No Dairy</li>
+                                        <li>No Additives or Preservatives</li>
+                                        <li>Manufactured in the USA</li>
+                                    </ul>
+                                    <hr>
+                                    <ul>
+                                        <li>300mg CBD for medium pets 20-60lbs</li>
+                                        <li>10mg CBD per serving</li>
+                                        <li>Approx. 30 servings per bottle</li>
+                                        <li>Bottle size: 15ml / 0.5 ounce</li>
+                                    </ul>
+
+                                    <h4>$39.95</h4>
+                                    <hr>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="centerImage">
+                                        <img class="imgTwo" src="images/cbd_3.PNG" alt="cbd oil">
+                                    </div>
+                                </th>
+                                <td>
+                                    <h3>CBD DOG TREATS + JOINT & MOBILITY CARE</h3>
+                                    <ul>
+                                        <li>Joint & Mobility Care</li>
+                                        <li>100% Natural Ingredients</li>
+                                        <li>Yummy Pumpkin Spice & Cinnamon Flavor</li>
+                                        <li>Organic, Vegan, Superfoods</li>
+                                        <li>Non GMO, No Gluten, No Dairy</li>
+                                        <li>30 Treats per Bag</li>
+                                    </ul>
+                                    <hr>
+                                    <ul>
+                                        <li>300mg CBD for medium pets 20-60lbs</li>
+                                        <li>10mg CBD per serving</li>
+                                    </ul>
+
+                                    <h4>$34.95</h4>
+                                    <hr>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </article>
+        <!--body content END-->
+
+        <footer class="myFooter">
+            <!--Footer Start-->
+            <div class="footerBlock">
+                <ul>
+                    <li class="noDot">Phone: 303-999-9999</li>
+                    <li class="noDot">Address: 2001 Colorado Blvd, Denver, CO 80205</li>
+                </ul>
+            </div>
+            <!--Footer Start-->
+        </footer>
+
+        <script src="apps.js"></script>
+    </body>
 
 </html>
