@@ -74,11 +74,21 @@ const smallDog = {
     oneML: "1ml = 7mg",
 };
 
+function smalDog () {
+    var thisSmallDog = smallDog.oneQuarter + "<br>" + smallDog.half + "<br>" + smallDog.threeQuarter + "<br>" + smallDog.oneML;
+    document.getElementById("myDosage").innerHTML = thisSmallDog;
+};
+
 const mediumDog = {
     oneQuarter: "1/4ml = 4.25mg",
     half: "1/2ml = 8.5mg",
     threeQuarter: "3/4ml = 12.75mg",
     oneML: "1ml = 17mg",
+};
+
+function medDog () {
+    var thisMedDog = mediumDog.oneQuarter + "<br>" + mediumDog.half + "<br>" + mediumDog.threeQuarter + "<br>" + mediumDog.oneML;
+    document.getElementById("myDosageTwo").innerHTML = thisMedDog;
 };
 
 const largeDog = {
@@ -88,17 +98,24 @@ const largeDog = {
     oneML: "1ml = 27mg",
 };
 
-function dogDosage () {
-        var textOne = "Dogs: 5 - 35lbs";
-        var boldOne = textOne.bold();
-        var textTwo = "Dogs: 35 - 75lbs";
-        var boldTwo = textTwo.bold();
-        var textThree = "Dogs: 75lbs +";
-        var boldThree = textThree.bold();
-        document.getElementById("myDosage").innerHTML = boldOne  + "<br>" + smallDog.oneQuarter + "<br>" + smallDog.half + "<br>" +  smallDog.threeQuarter + "<br>" + smallDog.oneML ;
-        document.getElementById("myDosageTwo").innerHTML = boldTwo + "<br>" + mediumDog.oneQuarter + "<br>" + mediumDog.half + "<br>" +  mediumDog.threeQuarter + "<br>" + mediumDog.oneML ;
-        document.getElementById("myDosageThree").innerHTML = boldThree + "<br>" + largeDog.oneQuarter + "<br>" + largeDog.half + "<br>" +  largeDog.threeQuarter + "<br>" + largeDog.oneML ;
+function largDog () {
+    var thisLargDog = largeDog.oneQuarter + "<br>" + largeDog.half + "<br>" + largeDog.threeQuarter + "<br>" + largeDog.oneML;
+    document.getElementById("myDosageThree").innerHTML = thisLargDog;
 };
+
+
+
+// function dogDosage () {
+//         var textOne = "Dogs: 5 - 35lbs";
+//         var boldOne = textOne.bold();
+//         var textTwo = "Dogs: 35 - 75lbs";
+//         var boldTwo = textTwo.bold();
+//         var textThree = "Dogs: 75lbs +";
+//         var boldThree = textThree.bold();
+//         document.getElementById("myDosage").innerHTML = boldOne  + "<br>" + smallDog.oneQuarter + "<br>" + smallDog.half + "<br>" +  smallDog.threeQuarter + "<br>" + smallDog.oneML ;
+//         document.getElementById("myDosageTwo").innerHTML = boldTwo + "<br>" + mediumDog.oneQuarter + "<br>" + mediumDog.half + "<br>" +  mediumDog.threeQuarter + "<br>" + mediumDog.oneML ;
+//         document.getElementById("myDosageThree").innerHTML = boldThree + "<br>" + largeDog.oneQuarter + "<br>" + largeDog.half + "<br>" +  largeDog.threeQuarter + "<br>" + largeDog.oneML ;
+// };
 
 dogDosage ();
 

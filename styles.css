@@ -63,23 +63,51 @@ div.hideme {
     margin: 15px;
 }
 
-.carousel-center , .centerDosage {
+.col-style {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1em;
-    padding: 1.5em;
 }
 
-.dosageStyle {
+.col {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30em;
+    flex-direction: column;
+    width: 90%;
+}
+
+.card-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.centerDosage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .dosagePic {
     width: 21px;
+}
+
+.dosage-header {
+    font-size: medium;
 }
 /* doggie age calc and display result END*/
 
