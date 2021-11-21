@@ -25,7 +25,7 @@ function special () {
     else if (dayNumber === 6) {
         return "Buy two edibles get one free!";
     }
-    else if (dayNumber === 7) {
+    else if (dayNumber === 0) {
         return "Brunch and free samples!";
     }
     else (element.classList.add("hideme"))
@@ -78,6 +78,10 @@ function smalDog () {
     var thisSmallDog = smallDog.oneQuarter + "<br>" + smallDog.half + "<br>" + smallDog.threeQuarter + "<br>" + smallDog.oneML;
     document.getElementById("myDosage").innerHTML = thisSmallDog;
 };
+function smalDogClear () {
+    var thisSmallDogClear = "" ;
+    document.getElementById("myDosage").innerHTML = thisSmallDogClear;
+};
 
 const mediumDog = {
     oneQuarter: "1/4ml = 4.25mg",
@@ -89,6 +93,10 @@ const mediumDog = {
 function medDog () {
     var thisMedDog = mediumDog.oneQuarter + "<br>" + mediumDog.half + "<br>" + mediumDog.threeQuarter + "<br>" + mediumDog.oneML;
     document.getElementById("myDosageTwo").innerHTML = thisMedDog;
+};
+function medDogClear () {
+    var thisMedDogClear = "";
+    document.getElementById("myDosageTwo").innerHTML = thisMedDogClear;
 };
 
 const largeDog = {
@@ -102,21 +110,9 @@ function largDog () {
     var thisLargDog = largeDog.oneQuarter + "<br>" + largeDog.half + "<br>" + largeDog.threeQuarter + "<br>" + largeDog.oneML;
     document.getElementById("myDosageThree").innerHTML = thisLargDog;
 };
-
-
-
-// function dogDosage () {
-//         var textOne = "Dogs: 5 - 35lbs";
-//         var boldOne = textOne.bold();
-//         var textTwo = "Dogs: 35 - 75lbs";
-//         var boldTwo = textTwo.bold();
-//         var textThree = "Dogs: 75lbs +";
-//         var boldThree = textThree.bold();
-//         document.getElementById("myDosage").innerHTML = boldOne  + "<br>" + smallDog.oneQuarter + "<br>" + smallDog.half + "<br>" +  smallDog.threeQuarter + "<br>" + smallDog.oneML ;
-//         document.getElementById("myDosageTwo").innerHTML = boldTwo + "<br>" + mediumDog.oneQuarter + "<br>" + mediumDog.half + "<br>" +  mediumDog.threeQuarter + "<br>" + mediumDog.oneML ;
-//         document.getElementById("myDosageThree").innerHTML = boldThree + "<br>" + largeDog.oneQuarter + "<br>" + largeDog.half + "<br>" +  largeDog.threeQuarter + "<br>" + largeDog.oneML ;
-// };
-
-dogDosage ();
+function largDogClear () {
+    var thisLargDogClear = "";
+    document.getElementById("myDosageThree").innerHTML = thisLargDogClear;
+};
 
 //dog CBD DOSAGE END

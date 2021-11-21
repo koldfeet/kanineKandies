@@ -109,6 +109,11 @@ div.hideme {
 .dosage-header {
     font-size: medium;
 }
+
+.dosage-h1 {
+    font-size: larger;
+    width: 40%;
+}
 /* doggie age calc and display result END*/
 
 /* Nav menu START */
