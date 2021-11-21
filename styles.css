@@ -156,7 +156,7 @@ img {
     justify-content: center;
     align-items: center;
     background-color: rgb(235, 229, 229);
-    width: 80%;
+    width: 100%;
 }
 
 .center-main {
@@ -203,7 +203,7 @@ img {
 }
 
 p {
-    width: 30%;
+    width: 80%;
 }
 
 .center-p {
@@ -216,3 +216,69 @@ h1 {
     text-align: center;
 }
 /* Denied page CSS END*/
+
+/*Media Screen Style Start*/
+
+@media screen and (min-width: 320px) and (max-width: 740px) {
+
+.compTitle {
+    margin-bottom: 25px;
+    font-size: 3em;
+}
+
+#message1 {
+    font-size: 1.5em;
+}
+
+.center-doggieCalc {
+    margin: .5em;
+}
+
+.result {
+    font-size: 1.5em;
+}
+
+#dogAge {
+    font-size: larger;
+}
+
+.card-h1 , .card-h2 {
+    font-size: 18px;
+}
+
+.homeTable {
+    font-size: 12px;
+}
+
+#carousel-image {
+    width: 200px;
+}
+
+#myDosage , #myDosageTwo , #myDosageThree {
+    width: 150px;
+    font-size: 12px;
+}
+
+.dosagePic {
+    margin-right: 25px;
+}
+
+/*Denied page media Start*/
+p {
+    width: 80%;
+}
+
+.denied-box {
+    width: 90%;
+}
+
+/*Denied page media End*/
+
+  }
+
+@media screen and (min-width: 741px) and (max-width: 1000px) {
+    #myDosage {
+        width: 150px;
+    }
+  }
+/*Media Screen Style End*/
