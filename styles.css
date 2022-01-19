@@ -217,6 +217,34 @@ h1 {
 }
 /* Denied page CSS END*/
 
+/* ====================forms style===================== */
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.first-name, .last-name, .password, .password-confirm {
+    margin: 10px;
+}
+
+.email, .phone  {
+    margin: 10px;
+    width: 100%;
+}
+
+.country-label {
+    margin-right: 10px;
+}
+
+#form-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
 /*Media Screen Style Start*/
 
 @media screen and (min-width: 320px) and (max-width: 740px) {

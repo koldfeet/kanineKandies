@@ -154,6 +154,57 @@
                 </div>
             </main>
         </article>
+
+        <!-- =================================Form section Start============================== -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <form name="contactForm" onsubmit="return validateForm()" action="#" method="get"
+                            autocomplete="on">
+
+                            <div class="register">
+                                <h2>Register</h2>
+                                <p>Create your account. It's free and only takes a minute.</p>
+                            </div>
+
+
+                            <div class="row">
+                                <!-- <label>Full Name</label> -->
+                                <input class="first-name" type="text" name="name" required placeholder="First Name">
+                                <input class="last-name" type="text" name="name" required placeholder="Last Name">
+                                <div class="error" id="nameErr"></div>
+                            </div>
+
+                            <div class="row">
+                                <!-- <label>Email Address</label> -->
+                                <input class="email" type="text" name="email" min="7" placeholder="Email">
+                                <div class="error" id="emailErr"></div>
+                            </div>
+
+                            <div class="row">
+                                <!-- <label>Mobile Number</label> -->
+                                <input class="phone" type="text" name="mobile" required placeholder="Phone Number">
+                                <div class="error" id="mobileErr"></div>
+                            </div>
+
+                            <div class="row">
+                                <input id="password" class="password" type="password" name="password"
+                                    placeholder="Password" required>
+                                <input id="confirm_password" class="password-confirm" type="password" name="password"
+                                    placeholder="Confirm Password" required oninput="check(this)">
+                                <div class="error" id="mobileErr"></div>
+                            </div>
+
+                            <div class="row" id="form-btn">
+                                <input type="submit" value="Submit">
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!--body content END-->
 
         <footer class="myFooter">
