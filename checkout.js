@@ -6,17 +6,23 @@ if (document.readyState ==`loading`) {
 }
 
 function ready() {
-    var removeCartItemButtons = document.getElementsByClassName(`btn-danger`)
-    console.log(removeCartItemButtons)
+    var removeCartItemButtons = document.getElementsByClassName(`btn-danger`)  //remove button
+    console.log(removeCartItemButtons) 
     for (var i = 0; i < removeCartItemButtons.length; i++) {
         var button = removeCartItemButtons[i]
-        button.addEventListener(`click`, removeCartItem) 
+        button.addEventListener(`click`, removeCartItem)  //function on line 30
     }
 
-    var quantityInput = document.getElementsByClassName(`cart-quantity-input`) 
+    var quantityInput = document.getElementsByClassName(`cart-quantity-input`) //change cart quantity input
     for (var i = 0; i < quantityInput.length; i++) {
         var input = quantityInput[i]
-        input.addEventListener(`change`, quantityChanged)
+        input.addEventListener(`change`, quantityChanged) //function on line 37
+    }
+
+    var addToCartButtons = document.getElementsByClassName(`shop-item-button`) //add to cart botton
+    for ( var i = 0; i < addToCartButtons.length; i++) {
+        var button = addToCartButtons[i]
+        button.addEventListener(`click`, addToCartClicked) //function on line 46
     }
 }
 
@@ -26,6 +32,7 @@ function removeCartItem(event) {
     buttonClicked.parentElement.parentElement.remove()
     updateCartTotal
 }
+
 //change quantity and price
 function quantityChanged (event) {
     var input = event.target
@@ -34,6 +41,14 @@ function quantityChanged (event) {
     }
     updateCartTotal()
 }
+
+//add to cart button clicked
+function addToCartClicked(event) {
+    var button = event.target
+    var shopItem = button.parentElement.parentElement
+    var title = shopItem.getElementsByClassName(`shop-item-title`)[0].innerText
+    console.log(title) 
+}  //=============start here at 27:06 ======= add price and quantity====================
 
 
 //==================remove button JS===================
@@ -62,8 +77,8 @@ function updateCartTotal() {
         var quantity = quantiyElement.value
         total = total + (price * quantity)
     }
-    total = Math.round(total * 100) / 100
+    total = Math.round(total * 100) / 100 //round total price to 2 decimal place
     document.getElementsByClassName(`cart-total-price`)[0].innerText = `$` + total
 }
 
-//==========cart quantity input change + price=============
+//==========add to cart button=============
