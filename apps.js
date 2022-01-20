@@ -118,12 +118,13 @@ function largDogClear () {
 //dog CBD DOSAGE END
 
 //======================form password confirm check====================
+
 function check(input) {
     // @ts-ignore
     if (input.value != document.getElementById('password').value) {
-        input.setCustomValidity('Password did not match.');
+        input.setCustomValidity('Password did not match.')
     } else {
         // input is valid -- reset the error message
-        input.setCustomValidity('');
+        input.setCustomValidity('')
     }
 }

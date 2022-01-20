@@ -168,32 +168,30 @@
                                 <p>Create your account. It's free and only takes a minute.</p>
                             </div>
 
-
+                            <!-- =======================First/Last Name=========== -->
                             <div class="row">
-                                <!-- <label>Full Name</label> -->
                                 <input class="first-name" type="text" name="name" required placeholder="First Name">
                                 <input class="last-name" type="text" name="name" required placeholder="Last Name">
-                                <div class="error" id="nameErr"></div>
                             </div>
 
+                            <!-- ==================Email================= -->
                             <div class="row">
-                                <!-- <label>Email Address</label> -->
-                                <input class="email" type="text" name="email" min="7" placeholder="Email">
-                                <div class="error" id="emailErr"></div>
+                                <input class="email" type="text" name="email" min="7" placeholder="Email"
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                             </div>
 
+                            <!-- ===============Phone Number=============== -->
                             <div class="row">
-                                <!-- <label>Mobile Number</label> -->
                                 <input class="phone" type="text" name="mobile" required placeholder="Phone Number">
-                                <div class="error" id="mobileErr"></div>
+
                             </div>
 
+                            <!-- ================Password=====JS start on line 120=============== -->
                             <div class="row">
                                 <input id="password" class="password" type="password" name="password"
-                                    placeholder="Password" required>
+                                    placeholder="Password" minlength="6" required>
                                 <input id="confirm_password" class="password-confirm" type="password" name="password"
                                     placeholder="Confirm Password" required oninput="check(this)">
-                                <div class="error" id="mobileErr"></div>
                             </div>
 
                             <div class="row" id="form-btn">
