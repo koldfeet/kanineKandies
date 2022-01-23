@@ -5,24 +5,46 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- =========bootstrap CDN======= -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <!-- =========bootstrap CDN======= -->
         <link rel="stylesheet" href="checkout.css">
         <title>Document</title>
     </head>
 
     <body>
-        <header class="main-header">
-            <nav class="main-nav nav">
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="store.html">STORE</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                </ul>
-            </nav>
-            <h1 class="band-name band-name-large">The Generics</h1>
+        <!-- navigation menu START -->
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="section-header">Product & Checkout</h1>
+                        <nav class="my-nav">
+                            <a class="nav-menu" href="home.html">Home</a>
+                            <a class="nav-menu" href="fortune.html">Fortune Teller</a>
+                            <a class="nav-menu" href="checkout.html">Shopping Cart</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </header>
+        <!-- navigation menu END -->
+
+        <!-- all items go inside this section -->
         <section class="container content-section">
-            <h2 class="section-header">MUSIC</h2>
+
             <div class="shop-items">
+
                 <div class="shop-item">
                     <span class="shop-item-title">Album 1</span>
                     <img class="shop-item-image" src="Images/Album1.png">
@@ -31,6 +53,7 @@
                         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
+
                 <div class="shop-item">
                     <span class="shop-item-title">Album 2</span>
                     <img class="shop-item-image" src="Images/Album2.png">
@@ -39,6 +62,7 @@
                         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
+
                 <div class="shop-item">
                     <span class="shop-item-title">Album 3</span>
                     <img class="shop-item-image" src="Images/Album3.png">
@@ -47,6 +71,7 @@
                         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
+
                 <div class="shop-item">
                     <span class="shop-item-title">Album 4</span>
                     <img class="shop-item-image" src="Images/Album4.png">
@@ -55,67 +80,50 @@
                         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="container content-section">
-            <h2 class="section-header">MERCH</h2>
-            <div class="shop-items">
+
                 <div class="shop-item">
-                    <span class="shop-item-title">T-Shirt</span>
-                    <img class="shop-item-image" src="Images/Shirt.png">
+                    <span class="shop-item-title">Album 5</span>
+                    <img class="shop-item-image" src="Images/Album4.png">
                     <div class="shop-item-details">
-                        <span class="shop-item-price">$19.99</span>
+                        <span class="shop-item-price">$1.99</span>
                         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
+
                 <div class="shop-item">
-                    <span class="shop-item-title">Coffee Cup</span>
-                    <img class="shop-item-image" src="Images/Cofee.png">
+                    <span class="shop-item-title">Album 6</span>
+                    <img class="shop-item-image" src="Images/Album4.png">
                     <div class="shop-item-details">
-                        <span class="shop-item-price">$6.99</span>
+                        <span class="shop-item-price">$3.99</span>
                         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
+
             </div>
         </section>
+
+        <!-- =========shopping cart total====================  -->
         <section class="container content-section">
-            <h2 class="section-header">CART</h2>
+
+            <h2 class="section-header">SHOPPING CART</h2>
+
             <div class="cart-row">
                 <span class="cart-item cart-header cart-column">ITEM</span>
                 <span class="cart-price cart-header cart-column">PRICE</span>
                 <span class="cart-quantity cart-header cart-column">QUANTITY</span>
             </div>
+
             <div class="cart-items">
                 <!-- this is where all the cart item go into. -->
             </div>
+
             <div class="cart-total">
                 <strong class="cart-total-title">Total</strong>
                 <span class="cart-total-price">$0</span>
             </div>
-            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+
+            <button class="btn btn-primary btn-purchase" type="button">Process to checkout</button>
         </section>
-        <footer class="main-footer">
-            <div class="container main-footer-container">
-                <h3 class="band-name">The Generics</h3>
-                <ul class="nav footer-nav">
-                    <li>
-                        <a href="https://www.youtube.com" target="_blank">
-                            <img src="images/YouTube Logo.png">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.spotify.com" target="_blank">
-                            <img src="images/Spotify Logo.png">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com" target="_blank">
-                            <img src="images/FacebookLogo.png">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
 
 
         <script src="checkout.js"></script>
