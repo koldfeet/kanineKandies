@@ -30,7 +30,7 @@ function ready() {
 
 //the PURCHASE button
 function purchaseClicked () {
-    alert(`Thanks you for your purchase`)
+    alert(`Thanks you for your purchases`)
     var cartItems = document.getElementsByClassName(`cart-items`)[0]
     while (cartItems.hasChildNodes() ) { //this while loop will remove all cart items until empty
         cartItems.removeChild(cartItems.firstChild)
@@ -119,11 +119,11 @@ function updateCartTotal() {
     for (var i = 0; i < cartRows.length; i++) {
         var cartRow = cartRows[i]
         var priceElement = cartRow.getElementsByClassName(`cart-price`)[0]
-        var quantiyElement = cartRow.getElementsByClassName(`cart-quantity-input`)[0]
+        var quanlityElement = cartRow.getElementsByClassName(`cart-quantity-input`)[0]
         // @ts-ignore
         var price = parseFloat(priceElement.innerText.replace(`$`, ``))
         // @ts-ignore
-        var quantity = quantiyElement.value
+        var quantity = quanlityElement.value
         total = total + (price * quantity)
     }
     total = Math.round(total * 100) / 100 //round total price to 2 decimal place
