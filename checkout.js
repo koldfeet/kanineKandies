@@ -24,13 +24,26 @@ function ready() {
         var button = addToCartButtons[i]
         button.addEventListener(`click`, addToCartClicked) //function on line 46
     }
+
+    document.getElementsByClassName(`btn-purchase`)[0].addEventListener(`click`, purchaseClicked)
+}
+
+//the PURCHASE button
+function purchaseClicked () {
+    alert(`Thanks you for your purchase`)
+    var cartItems = document.getElementsByClassName(`cart-items`)[0]
+    while (cartItems.hasChildNodes() ) { //this while loop will remove all cart items until empty
+        cartItems.removeChild(cartItems.firstChild)
+    }
+
+    updateCartTotal() //this function update cart price after purchase
 }
 
 //remove button removing item
 function removeCartItem(event) {
     var buttonClicked = event.target
     buttonClicked.parentElement.parentElement.remove()
-    updateCartTotal
+    updateCartTotal()
 }
 
 //change quantity and price
@@ -47,8 +60,42 @@ function addToCartClicked(event) {
     var button = event.target
     var shopItem = button.parentElement.parentElement
     var title = shopItem.getElementsByClassName(`shop-item-title`)[0].innerText
-    console.log(title) 
-}  //=============start here at 27:06 ======= add price and quantity====================
+    var price = shopItem.getElementsByClassName(`shop-item-price`)[0].innerText
+    var imageSrc = shopItem.getElementsByClassName(`shop-item-image`)[0].src
+    console.log(title , price , imageSrc) 
+    addItemToCart(title, price, imageSrc) //making a row for image,price,name (function on line 56)
+    updateCartTotal()
+}  
+
+function addItemToCart (title, price, imageSrc) {  //this function is to add name,price,image, and also warn customer that item is alerady added to cart
+    var cartRow = document.createElement(`div`)
+    cartRow.classList.add(`cart-row`)
+    var cartItems = document.getElementsByClassName(`cart-items`)[0]
+    var cartItmeNames = cartItems.getElementsByClassName(`cart-item-title`)
+    for (var i = 0; i < cartItmeNames.length; i++) {
+        // @ts-ignore
+        if (cartItmeNames[i].innerText == title ) {
+            alert(`This item is already added to cart`)
+            return
+        }
+    }
+    //adding all new items into car as a new row
+    var carRowContents = ` 
+            <div class="cart-item cart-column">
+                <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
+                <span class="cart-item-title">${title}</span>
+            </div>
+                <span class="cart-price cart-column">${price}</span>
+            <div class="cart-quantity cart-column">
+                <input class="cart-quantity-input" type="number" value="1">
+                <button class="btn btn-danger" type="button">REMOVE</button>
+            </div>
+    `
+    cartRow.innerHTML = carRowContents
+    cartItems.append(cartRow)
+    cartRow.getElementsByClassName(`btn-danger`)[0].addEventListener(`click`, removeCartItem) //making remove button work
+    cartRow.getElementsByClassName(`cart-quantity-input`)[0].addEventListener(`change`, quantityChanged) //change quantity price
+}
 
 
 //==================remove button JS===================
@@ -73,12 +120,13 @@ function updateCartTotal() {
         var cartRow = cartRows[i]
         var priceElement = cartRow.getElementsByClassName(`cart-price`)[0]
         var quantiyElement = cartRow.getElementsByClassName(`cart-quantity-input`)[0]
+        // @ts-ignore
         var price = parseFloat(priceElement.innerText.replace(`$`, ``))
+        // @ts-ignore
         var quantity = quantiyElement.value
         total = total + (price * quantity)
     }
     total = Math.round(total * 100) / 100 //round total price to 2 decimal place
+    // @ts-ignore
     document.getElementsByClassName(`cart-total-price`)[0].innerText = `$` + total
 }
-
-//==========add to cart button=============
